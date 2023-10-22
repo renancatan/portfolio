@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Skills - Renan's Portfolio</title>
+    <title>Skills & Experience - Renan's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
@@ -9,43 +9,81 @@
         <h1>Renan's Portfolio</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="skills.html">Skills</a>
+            <a href="skills.html">Skills & Experience</a>
             <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section id="skills">
-        <h2>Skills</h2>
-            <div class="accordion">
-              <button class="accordion-button">Python</button>
-              <div class="accordion-content">
-                <p>Airflow</p>
-                <p>API Integration</p>
-                <p>Web Scraping</p>
-                <p>Automation</p>
-                <p>Database integration</p>
-                <p>Google Sheets integration</p>
-                <!-- Add more Python sub-skills here -->
-              </div>
+        <section id="skills">
+        <h2>Skills & Experience</h2>
 
-              <button class="accordion-button">Data Analysis</button>
-              <div class="accordion-content">
-                <p>Machine learning</p>
-                <p>SQL</p>
-                <p>Power BI</p>
-                <p>data mining</p>
-                <!-- Add more Data Analysis sub-skills here -->
-              </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Description</th>
+                    <th>Role</th>
+                    <th>Tools Used</th>
+                    <th>Duration</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Python Section -->
+                <tr>
+                    <td>Python</td>
+                    <td>Experience in building scalable backend systems using Python.</td>
+                    <td>Backend Developer</td>
+                    <td>
+                        <ul>
+                            <li>Airflow</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </td>
+                    <td>2 years</td>
+                    <td>
+                        <div class="level" data-level="beginner"></div>
+                    </td>
+                </tr>
 
-              <button class="accordion-button">JavaScript/TS</button>
-              <div class="accordion-content">
-                <p>DOM Manipulation</p>
-                <p>API Fetching</p>
-                <p>html/css</p>
-                <!-- Add more JavaScript sub-skills here -->
-              </div>
-            </div>
+                <!-- Data Analysis Section -->
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Experienced in analyzing large datasets to derive actionable insights.</td>
+                    <td>Data Analyst</td>
+                    <td>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Power BI</li>
+                            <li>SQL</li>
+                        </ul>
+                    </td>
+                    <td>1.5 years</td>
+                    <td>
+                        <div class="level" data-level="intermediate"></div>
+                    </td>
+                </tr>
 
+                <!-- JavaScript/TS Section -->
+                <tr>
+                    <td>JavaScript/TS</td>
+                    <td>Experience in front-end development using JavaScript and TypeScript.</td>
+                    <td>Front-end Developer</td>
+                    <td>
+                        <ul>
+                            <li>DOM Manipulation</li>
+                            <li>API Fetching</li>
+                        </ul>
+                    </td>
+                    <td>1 year</td>
+                    <td>
+                        <div class="level" data-level="beginner"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -60,27 +60,54 @@ tr:nth-child(even) {
 
 .level {
     height: 20px;
-    width: 100px;
-    border: 1px solid #000;
-    margin-bottom: 1rem; /* Spacing after each skill bar */
+    width: 100%; /* Full width to act as the background scale */
+    background: #e0e0e0; /* A neutral color for the scale background */
+    position: relative;
+    border: 1px solid #aaa; /* Adjust the border width and color here */
+    margin-bottom: 1rem;
 }
 
-.level[data-level="beginner"] {
+.level::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; /* Starts from the left edge */
+}
+
+.level[data-level="beginner"]::before {
+    width: 20%; /* 20% of the scale for beginner */
     background: red;
 }
 
-.level[data-level="intermediate"] {
-    background: #b04e00; /* This is a color in between red and green */
+.level[data-level="intermediate"]::before {
+    width: 40%; /* 40% of the scale for intermediate */
+    background: orange;
 }
 
-.level[data-level="experienced"] {
+.level[data-level="experienced"]::before {
+    width: 60%; /* 60% of the scale for experienced */
     background: yellow;
 }
 
-.level[data-level="expert"] {
-    background: #4eb000; /* This is a color more towards green */
+.level[data-level="expert"]::before {
+    width: 80%; /* 80% of the scale for expert */
+    background: limegreen;
 }
 
-.level[data-level="master"] {
+.level[data-level="master"]::before {
+    width: 100%; /* Full scale for master */
     background: green;
+}
+
+/* Proficiency labels displayed below the colored bar */
+.level::after {
+    content: attr(data-label); /* This assumes you have a data-label attribute on your .level elements */
+    position: absolute;
+    bottom: -20px; /* Adjust as needed */
+    left: 0; /* Align to the left edge or as needed */
+    transform: translateX(0%); /* Adjust translation as needed */
+    font-size: 0.75rem;
+    color: #333;
+    white-space: nowrap;
 }

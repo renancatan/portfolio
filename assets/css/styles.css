@@ -114,8 +114,8 @@ tr:nth-child(even) {
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Adjust this as necessary */
+    align-items: left;
+    justify-content: left; /* Adjust this as necessary */
 }
 
 .profile-pic {

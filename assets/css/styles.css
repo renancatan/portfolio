@@ -111,3 +111,24 @@ tr:nth-child(even) {
     color: #333;
     white-space: nowrap;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjust this as necessary */
+}
+
+.profile-pic {
+    width: 100px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Adjust spacing between image and title */
+}
+
+header {
+    background-color: #242729;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add more styling as necessary */

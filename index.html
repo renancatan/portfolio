@@ -1,62 +1,245 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Renan's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Renan Catan is a Data & AI Engineer working across data platforms, analytics engineering, AI systems, and product data.">
+  <meta name="theme-color" content="#081411">
+  <meta property="og:title" content="Renan Catan — Data & AI Engineer">
+  <meta property="og:description" content="Data platforms, AI systems, analytics engineering, and product data integrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/img_myself.jpg">
+  <title>Renan Catan — Data & AI Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%236ef2b5'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='20' font-weight='700' fill='%2306110d'%3ERC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="header-content">
-        <img src="assets/img/img_myself.jpg" alt="Renan Catan" class="profile-pic"/>
-    </div>
-    <h1>Renan's Portfolio</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="skills.html">Skills & Experience</a>
-        <a href="challenge.html">Current Challenges</a>
-        <a href="projects.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Renan Catan, home">
+      <span class="brand-mark" aria-hidden="true">RC</span>
+      <span>Renan Catan</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span>
+    </button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#product-data">Product data</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
     </nav>
-</header>
+  </header>
 
-<section id="home">
-    <h2>&nbsp;Hello, I'm Renan Catan.</h2>
-    <p>
-        &nbsp; At the core of my professional journey lies a profound enthusiasm for development,
-        with a particular emphasis on Python, SQL, Airflow, and Data Warehouse technologies and a little of js/ts.
-        <br>
-        &nbsp; My expertise in Python and SQL has been a cornerstone in my career, enabling me to develop robust data
-        solutions.
-        <br><br>
-        &nbsp; With Airflow, I've streamlined complex data workflows, enhancing efficiency and reliability.
-        <br>
-        &nbsp; My starting experience with Data Warehouses has furthered my ability to manage and analyze large datasets
-        effectively as well create DW/DM from scratch.
-        <br><br>
-        &nbsp; In addition to these technical skills, I bring three years of rich experience in Data Analysis.
-        <br>
-        &nbsp; My journey began as a Data Analyst, where I specialized in machine learning, and gradually evolved into a
-        role that seamlessly integrates software development and data engineering.
-        <br><br>
-        &nbsp; As a Mechanical Engineer, I've always approached problems with a data-driven mindset.
-        My proficiency extends to data visualization, analytical thinking, and a Kanban-oriented work methodology.
-        <br>
-        &nbsp; Driven by challenges and a passion for innovation, I am dedicated to leveraging my diverse skill
-        set in Python, SQL, Airflow, and Data Warehouse to create impactful data and software solutions.
-        <br><br>
-        &nbsp; You can see my complete skills through the skills section below or here:
-        <a href='skills.html'>Link to skills page</a>
-    </p>
-    <div class="personal-data">
-        <pre><code>{
-          "name": "Renan",
-          "birth_date": "1990-04-30",
-          "skills": <a href="skills_page.html">"Link to skills page"</a>,
-          "country": "Brazil"
-        }</code></pre>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Data & AI Engineer · Brazil</p>
+        <h1>I turn complex data into <span>reliable systems</span> and useful products.</h1>
+        <p class="hero-summary">
+          I work across data engineering, analytics, AI, and product infrastructure—from robust
+          pipelines and warehouses to embeddings, intelligent applications, and activation workflows.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
       </div>
-</section>
+      <aside class="hero-profile reveal" aria-label="Profile summary">
+        <div class="portrait-frame">
+          <img src="assets/img/img_myself.jpg" alt="Portrait of Renan Catan" width="360" height="360">
+        </div>
+        <div class="status"><span></span> Building at the intersection of data and AI</div>
+        <dl class="profile-facts">
+          <div><dt>Core</dt><dd>Python · SQL · Data platforms</dd></div>
+          <div><dt>Focus</dt><dd>AI systems · Analytics · Product data</dd></div>
+          <div><dt>Background</dt><dd>Engineering · Data analysis</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section section-intro" id="about">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>An engineer who connects technical depth to business context.</h2>
+      </div>
+      <div class="prose">
+        <p>
+          My path from mechanical engineering and data analysis into software, data engineering,
+          and AI shaped how I solve problems: understand the system, find the leverage point, and
+          build something people can trust.
+        </p>
+        <p>
+          I am comfortable moving between architecture and implementation—modeling a warehouse,
+          writing production Python and SQL, orchestrating pipelines, integrating product platforms,
+          or turning AI capabilities into practical workflows.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="capabilities">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2>More than a list of tools.</h2>
+        </div>
+        <p>Technologies grouped by the systems and outcomes they help create.</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <span class="card-index">01</span>
+          <h3>Data engineering</h3>
+          <p>Reliable ingestion, transformation, orchestration, and delivery across batch and event-driven workflows.</p>
+          <ul class="tags" aria-label="Data engineering technologies">
+            <li>Python</li><li>SQL</li><li>Apache Spark</li><li>Airflow</li><li>APIs</li><li>ELT / ETL</li>
+          </ul>
+        </article>
+
+        <article class="capability-card reveal">
+          <span class="card-index">02</span>
+          <h3>Warehousing & analytics</h3>
+          <p>Mature dimensional modeling, transformation layers, data marts, and governed datasets built for decision-making.</p>
+          <ul class="tags" aria-label="Warehousing and analytics technologies">
+            <li>dbt</li><li>Data warehouses</li><li>Data marts</li><li>Dimensional modeling</li><li>BI</li><li>Data quality</li>
+          </ul>
+        </article>
+
+        <article class="capability-card reveal">
+          <span class="card-index">03</span>
+          <h3>AI engineering</h3>
+          <p>Applied AI systems that connect models to trusted context, tools, evaluation, and real user workflows.</p>
+          <ul class="tags" aria-label="AI engineering technologies">
+            <li>LLMs</li><li>Embedding models</li><li>Vector databases</li><li>RAG</li><li>Agents</li><li>Evaluation</li>
+          </ul>
+        </article>
+
+        <article class="capability-card reveal">
+          <span class="card-index">04</span>
+          <h3>Software & automation</h3>
+          <p>Maintainable services, integrations, and automations that remove manual work and connect operational systems.</p>
+          <ul class="tags" aria-label="Software and automation technologies">
+            <li>Python services</li><li>JavaScript / TypeScript</li><li>REST APIs</li><li>Webhooks</li><li>Testing</li><li>Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section product-section" id="product-data">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Product data & engagement</p>
+          <h2>From customer events to meaningful activation.</h2>
+        </div>
+        <p>
+          Hands-on experience connecting collection, identity, behavioral analytics,
+          audience orchestration, and lifecycle communication.
+        </p>
+      </div>
+
+      <div class="workflow" aria-label="Product data integration workflow">
+        <article>
+          <span>01</span>
+          <h3>Instrument</h3>
+          <p>Define events, properties, identity rules, and tracking plans across customer touchpoints.</p>
+          <strong>RudderStack</strong>
+        </article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article>
+          <span>02</span>
+          <h3>Understand</h3>
+          <p>Analyze funnels, cohorts, retention, and behavioral patterns to inform product decisions.</p>
+          <strong>Mixpanel · CleverTap</strong>
+        </article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article>
+          <span>03</span>
+          <h3>Activate</h3>
+          <p>Build audiences and trigger coordinated messaging across customer lifecycle journeys.</p>
+          <strong>Braze · CleverTap</strong>
+        </article>
+        <div class="workflow-arrow" aria-hidden="true">→</div>
+        <article>
+          <span>04</span>
+          <h3>Learn</h3>
+          <p>Bring delivery and engagement signals back into the data platform for measurement and iteration.</p>
+          <strong>Warehouse · dbt</strong>
+        </article>
+      </div>
+
+      <div class="integration-note">
+        <p>Integration experience</p>
+        <div>
+          <span>SDK & server-side events</span>
+          <span>Identity resolution</span>
+          <span>APIs & webhooks</span>
+          <span>Audience synchronization</span>
+          <span>Campaign feedback loops</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Systems, decisions, outcomes.</h2>
+        </div>
+        <p>
+          This section is structured for case studies. The next content pass will add
+          verified projects, architecture, and measurable results.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card work-card-featured reveal">
+          <p class="work-type">Data platform · Case study</p>
+          <h3>Analytics foundations that teams can build on</h3>
+          <p>Warehouse modeling, orchestrated transformations, quality controls, and trusted delivery to business users.</p>
+          <ul><li>Architecture</li><li>dbt</li><li>Orchestration</li><li>Governance</li></ul>
+          <span class="coming-soon">Case study in development</span>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-type">AI engineering · Case study</p>
+          <h3>Context-aware applications grounded in real data</h3>
+          <p>Embedding pipelines, retrieval, vector search, tool integration, and evaluation for useful AI workflows.</p>
+          <ul><li>Embeddings</li><li>Vector DB</li><li>RAG</li></ul>
+          <span class="coming-soon">Case study in development</span>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-type">Product data · Case study</p>
+          <h3>Connected customer engagement ecosystem</h3>
+          <p>Event collection, behavioral analysis, audience activation, and closed-loop campaign measurement.</p>
+          <ul><li>RudderStack</li><li>Mixpanel</li><li>Braze</li></ul>
+          <span class="coming-soon">Case study in development</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p>Interested in data platforms, applied AI, analytics, or product infrastructure? Let’s talk.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/renan-catan/" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://github.com/renancatan" target="_blank" rel="noopener noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed and built by Renan Catan.</p>
+    <p>Data · AI · Product</p>
+  </footer>
 </body>
 </html>

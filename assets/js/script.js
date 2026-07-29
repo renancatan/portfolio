@@ -1,34 +1,29 @@
-// Function to open a modal
-function openModal(modal) {
-    if (modal == null) return;
-    modal.style.display = 'block';
-  }
-  
-  // Function to close a modal
-  function closeModal(modal) {
-    if (modal == null) return;
-    modal.style.display = 'none';
-  }
-  
-  // Add event listeners for the modal buttons
-  document.querySelectorAll('.modal-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const modal = document.querySelector(button.dataset.modalTarget);
-      openModal(modal);
-    });
+const navToggle = document.querySelector('.nav-toggle');
+const siteNav = document.querySelector('#site-nav');
+
+navToggle?.addEventListener('click', () => {
+  const open = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', String(!open));
+  siteNav?.classList.toggle('open', !open);
+});
+
+siteNav?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navToggle?.setAttribute('aria-expanded', 'false');
+    siteNav.classList.remove('open');
   });
-  
-  // Add event listeners for closing the modal
-  document.querySelectorAll('.close-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const modal = button.closest('.modal');
-      closeModal(modal);
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-  });
-  
-  // Close modal when clicking outside of it
-  window.addEventListener('click', e => {
-    if (e.target.classList.contains('modal')) {
-      closeModal(e.target);
-    }
-  });  
+  },
+  { threshold: 0.12 }
+);
+
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));

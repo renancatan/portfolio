@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "renan-portfolio-ai",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://renancatan.github.io",
+    "GEMINI_MODEL": "gemini-3.5-flash-lite"
+  },
+  "ratelimits": [
+    {
+      "name": "ASK_RATE_LIMITER",
+      "namespace_id": "294701",
+      "simple": {
+        "limit": 5,
+        "period": 60
+      }
+    }
+  ]
+}

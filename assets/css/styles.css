@@ -405,8 +405,6 @@ footer {
   .header-identity { gap: .7rem; }
   .header-ai { gap: .4rem; padding: .25rem .55rem .25rem .27rem; }
   .header-ai-icon { width: 28px; height: 28px; font-size: 1.05rem; }
-  .header-ai-full { display: none; }
-  .header-ai-short { display: inline; }
   .nav-toggle {
     display: grid;
     gap: 6px;
@@ -455,4 +453,9 @@ footer {
   .certification-list small { grid-column: 1; grid-row: 2; }
   .certification-list b { grid-column: 2; grid-row: 1 / span 2; }
   footer { flex-direction: column; gap: .3rem; }
+}
+
+@media (max-width: 380px) {
+  .header-ai-full { display: none; }
+  .header-ai-short { display: inline; }
 }

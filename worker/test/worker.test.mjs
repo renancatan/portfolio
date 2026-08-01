@@ -109,6 +109,7 @@ test("returns plain model output and sends stateless constrained request", async
   assert.equal(upstreamBody.model, "gemini-3.5-flash-lite");
   assert.equal(upstreamBody.generation_config.max_output_tokens, 220);
   assert.match(upstreamBody.system_instruction, /Never invent employers/);
+  assert.match(upstreamBody.system_instruction, /When discussing selected work/);
 });
 
 test("output parser ignores non-model steps", () => {
@@ -118,5 +119,8 @@ test("output parser ignores non-model steps", () => {
 test("profile context contains public facts but no secrets or employer names", () => {
   assert.match(PROFILE_CONTEXT, /Python and SQL/);
   assert.match(PROFILE_CONTEXT, /RudderStack/);
+  assert.match(PROFILE_CONTEXT, /E-commerce warehouse challenge solution/);
+  assert.match(PROFILE_CONTEXT, /11 automated safeguard checks/);
+  assert.match(PROFILE_CONTEXT, /Operational BI walkthrough/);
   assert.doesNotMatch(PROFILE_CONTEXT, /GEMINI_API_KEY|AIza|restorewellness/i);
 });

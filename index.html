@@ -18,17 +18,10 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="header-identity">
-      <a class="brand" href="#top" aria-label="Renan Catan, home">
-        <span class="brand-mark" aria-hidden="true">RC</span>
-        <span>Renan Catan</span>
-      </a>
-      <button class="header-ai" type="button" data-chat-open aria-label="Ask Renan AI" aria-haspopup="dialog" aria-controls="ask-renan">
-        <span class="header-ai-icon" aria-hidden="true">✦</span>
-        <span class="header-ai-full" aria-hidden="true">Ask Renan AI</span>
-        <span class="header-ai-short" aria-hidden="true">Ask AI</span>
-      </button>
-    </div>
+    <a class="brand" href="#top" aria-label="Renan Catan, home">
+      <span class="brand-mark" aria-hidden="true">RC</span>
+      <span>Renan Catan</span>
+    </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Toggle navigation</span>
       <span></span><span></span>
@@ -59,8 +52,14 @@
           </a>
         </div>
       </div>
-      <div class="portrait reveal">
-        <img src="assets/img/img_myself.jpg" alt="Portrait of Renan Catan" width="360" height="360">
+      <div class="portrait-column reveal">
+        <button class="portrait-ai" type="button" data-chat-open aria-haspopup="dialog" aria-controls="ask-renan">
+          <span class="portrait-ai-icon" aria-hidden="true">✦</span>
+          <span>Ask Renan AI</span>
+        </button>
+        <div class="portrait">
+          <img src="assets/img/img_myself.jpg" alt="Portrait of Renan Catan" width="360" height="360">
+        </div>
       </div>
     </section>
 

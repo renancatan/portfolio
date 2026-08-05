@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import worker, { PROFILE_CONTEXT, outputText } from "../src/index.js";
+import worker, { PROFILE_CONTEXT, PROFILE_DATA, isPrioritySkillsQuestion, outputText, prioritySkillsAnswer } from "../src/index.js";
 
 const origin = "https://renancatan.github.io";
 const baseEnv = {
@@ -108,19 +108,49 @@ test("returns plain model output and sends stateless constrained request", async
   assert.equal(upstreamBody.store, false);
   assert.equal(upstreamBody.model, "gemini-3.5-flash-lite");
   assert.equal(upstreamBody.generation_config.max_output_tokens, 220);
-  assert.match(upstreamBody.system_instruction, /Never invent employers/);
+  assert.match(upstreamBody.system_instruction, /profile JSON/);
   assert.match(upstreamBody.system_instruction, /When discussing selected work/);
+  assert.match(upstreamBody.system_instruction, /exactly six short lines/);
 });
 
 test("output parser ignores non-model steps", () => {
   assert.equal(outputText({ steps: [{ type: "thought", content: [{ type: "text", text: "hidden" }] }, { type: "model_output", content: [{ type: "text", text: "answer" }] }] }), "answer");
 });
 
-test("profile context contains public facts but no secrets or employer names", () => {
+test("returns a deterministic six-line priority list without calling Gemini", async (t) => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => { throw new Error("Gemini should not be called"); };
+  t.after(() => { globalThis.fetch = originalFetch; });
+
+  const response = await worker.fetch(request("/ask", {
+    body: JSON.stringify({ question: "List Renan's skills by priority." }),
+  }), baseEnv);
+  const { answer } = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(answer, prioritySkillsAnswer());
+  assert.equal(answer.split("\n").length, 6);
+  assert.match(answer, /^1\. Applied AI and LLM workflows:/);
+  assert.equal(isPrioritySkillsQuestion("What does Renan build?"), false);
+});
+
+test("profile context contains the prioritized public career facts", () => {
   assert.match(PROFILE_CONTEXT, /Python and SQL/);
+  assert.match(PROFILE_CONTEXT, /AI agent workflows/);
+  assert.match(PROFILE_CONTEXT, /Medallion architecture/);
+  assert.match(PROFILE_CONTEXT, /Google BigQuery/);
   assert.match(PROFILE_CONTEXT, /RudderStack/);
-  assert.match(PROFILE_CONTEXT, /E-commerce warehouse challenge solution/);
-  assert.match(PROFILE_CONTEXT, /11 automated safeguard checks/);
+  assert.match(PROFILE_CONTEXT, /E-commerce warehouse challenge/);
+  assert.match(PROFILE_CONTEXT, /more than 70%/);
+  assert.match(PROFILE_CONTEXT, /20\+ competitors/);
   assert.match(PROFILE_CONTEXT, /Operational BI walkthrough/);
-  assert.doesNotMatch(PROFILE_CONTEXT, /GEMINI_API_KEY|AIza|restorewellness/i);
+  assert.match(PROFILE_CONTEXT, /Kantar IBOPE Media/);
+  assert.match(PROFILE_CONTEXT, /Mara/);
+  assert.deepEqual(PROFILE_DATA.prioritySkills.map(({ priority }) => priority), [1, 2, 3, 4, 5, 6]);
+});
+
+test("public profile context excludes private and confidential data", () => {
+  assert.doesNotMatch(PROFILE_CONTEXT, /GEMINI_API_KEY|AIza|restorewellness|renancatan@gmail\.com|96443-9935/i);
+  assert.doesNotMatch(PROFILE_CONTEXT, /São Paulo/i);
+  assert.doesNotMatch(PROFILE_CONTEXT, /\$\s?\d|USD\s?\d|compensation package/i);
 });

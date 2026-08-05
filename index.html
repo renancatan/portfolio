@@ -1,23 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Renan Catan is a Data & AI Engineer specializing in data platforms, applied AI, and product data.">
+  <meta name="description" content="Renan Catan is a Data &amp; AI Engineer specializing in data platforms, applied AI, and product data.">
   <meta name="theme-color" content="#081411">
-  <meta property="og:title" content="Renan Catan — Data & AI Engineer">
+  <meta property="og:title" content="Renan Catan — Data &amp; AI Engineer">
   <meta property="og:description" content="Data platforms, applied AI, and product data systems.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/img_myself.jpg">
-  <title>Renan Catan — Data & AI Engineer</title>
+  <meta property="og:image" content="https://renancatan.github.io/portfolio/assets/img/img_myself.jpg">
+  <meta property="og:url" content="https://renancatan.github.io/portfolio/">
+  <link rel="canonical" href="https://renancatan.github.io/portfolio/">
+  <title>Renan Catan — Data &amp; AI Engineer</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%236ef2b5'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='20' font-weight='700' fill='%2306110d'%3ERC%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260801-work">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260805-profile">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" aria-label="Site header">
     <a class="brand" href="#top" aria-label="Renan Catan, home">
       <span class="brand-mark" aria-hidden="true">RC</span>
       <span>Renan Catan</span>
@@ -28,8 +30,8 @@
     </button>
     <nav id="site-nav" aria-label="Primary navigation">
       <a href="#work">Selected work</a>
+      <a href="profile.html">Career profile</a>
       <a href="#expertise">Expertise</a>
-      <a href="#product-data">Product data</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -37,7 +39,7 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Data & AI Engineer · Brazil</p>
+        <p class="eyebrow">Data &amp; AI Engineer · Brazil</p>
         <h1>Reliable data platforms.<br><span>Useful AI.</span></h1>
         <p class="hero-summary">
           Python and SQL at the core—from Spark, dbt, and data warehouses to embeddings,
@@ -111,7 +113,7 @@
           </p>
           <div class="work-outcome">
             <span>Delivered</span>
-            <strong>A working assistant backed by 11 automated checks across its main safeguards.</strong>
+            <strong>A working assistant backed by 13 automated checks across its main safeguards.</strong>
           </div>
           <p class="work-stack">Gemini · Cloudflare Workers · JavaScript · Tests</p>
           <div class="work-actions">
@@ -182,8 +184,8 @@
           <p class="stack">RudderStack · Mixpanel · CleverTap · Braze</p>
         </article>
       </div>
-      <a class="detail-link" href="details.html">
-        View full skills & certifications <span aria-hidden="true">→</span>
+      <a class="detail-link" href="profile.html">
+        View prioritized skills &amp; career profile <span aria-hidden="true">→</span>
       </a>
     </section>
 
@@ -200,22 +202,22 @@
         <li>
           <span>01</span>
           <strong>Collect</strong>
-          <small>Events & identity</small>
+          <small>Events &amp; identity</small>
         </li>
         <li>
           <span>02</span>
           <strong>Understand</strong>
-          <small>Funnels & cohorts</small>
+          <small>Funnels &amp; cohorts</small>
         </li>
         <li>
           <span>03</span>
           <strong>Activate</strong>
-          <small>Audiences & journeys</small>
+          <small>Audiences &amp; journeys</small>
         </li>
         <li>
           <span>04</span>
           <strong>Measure</strong>
-          <small>Engagement & outcomes</small>
+          <small>Engagement &amp; outcomes</small>
         </li>
       </ol>
 
@@ -242,18 +244,18 @@
 
   <dialog class="chat-dialog" id="ask-renan" aria-labelledby="chat-title" data-api-endpoint="https://renan-portfolio-ai.renan-portfolio-ai-worker.workers.dev/ask">
     <div class="chat-shell">
-      <header class="chat-header">
+      <div class="chat-header">
         <div>
           <p class="eyebrow">Gemini portfolio assistant</p>
           <h2 id="chat-title">Ask about Renan.</h2>
         </div>
         <button class="chat-close" type="button" data-chat-close aria-label="Close assistant">×</button>
-      </header>
+      </div>
 
-      <div class="chat-suggestions" aria-label="Suggested questions">
-        <button type="button" data-question="What has Renan built?">Selected work</button>
+      <div class="chat-suggestions" role="group" aria-label="Suggested questions">
+        <button type="button" data-question="List Renan's skills by priority.">Priority skills</button>
         <button type="button" data-question="Summarize Renan for a hiring manager.">Hiring summary</button>
-        <button type="button" data-question="How does Renan work with data platforms?">Data platforms</button>
+        <button type="button" data-question="What measurable outcomes has Renan delivered?">Outcomes</button>
       </div>
 
       <div class="chat-messages" data-chat-messages aria-live="polite">
@@ -273,7 +275,7 @@
   </dialog>
 
   <footer>
-    <p>Renan Catan · Data & AI Engineer</p>
+    <p>Renan Catan · Data &amp; AI Engineer</p>
     <p>Brazil</p>
   </footer>
 </body>

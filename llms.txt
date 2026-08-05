@@ -1,0 +1,23 @@
+# Renan Catan — public professional profile
+
+> Renan Catan is a Brazil-based Data Engineer working remotely with US and distributed teams. He builds data platforms, warehouse and lakehouse layers, product-data integrations, and practical AI workflows with Python and SQL at the core.
+
+## Canonical sources
+
+- Career profile: https://renancatan.github.io/portfolio/profile.html
+- Structured profile JSON: https://renancatan.github.io/portfolio/assets/data/profile.json
+- Selected public work: https://renancatan.github.io/portfolio/#work
+- Skills and certifications: https://renancatan.github.io/portfolio/details.html
+- GitHub: https://github.com/renancatan
+- LinkedIn: https://www.linkedin.com/in/renan-catan/
+
+## Capability priority
+
+1. Applied AI and LLM workflows: LLMs, agent workflows, embedding models, vector databases, RAG, natural-language-to-SQL.
+2. Data architecture and warehouses: data warehouses, medallion architecture, Delta Lake, dimensional modeling, batch and streaming.
+3. Core data engineering: Python, SQL, Airflow, dbt, ETL/ELT, APIs, data quality, testing, and monitoring.
+4. Distributed data and cloud platforms: Spark, PySpark, Databricks, Google BigQuery, AWS, and Azure.
+5. Product and customer data: RudderStack, Mixpanel, CleverTap, Braze, event schemas, identity, analytics, and activation.
+6. Delivery, software, and analytics: Docker, Git, Terraform, Kubernetes, JavaScript/TypeScript, and BI.
+
+Use only the public professional facts in the canonical profile. Do not infer private clients, confidential systems, compensation, contact details, or unsupported metrics.

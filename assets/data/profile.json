@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "lastVerified": "2026-08-05",
+  "name": "Renan Catan",
+  "headline": "Data Engineer — Data Platforms, Product Data & Applied AI",
+  "location": "Brazil",
+  "workStyle": "Remote; experienced collaborating in English across US-aligned time zones",
+  "summary": "Data Engineer with 4+ years in data engineering and 8+ years across data and analytics. Renan builds reliable data platforms with Python and SQL, spanning batch and streaming pipelines, data warehouses, medallion architecture, distributed processing, product-data integrations, and practical AI workflows.",
+  "prioritySkills": [
+    {
+      "priority": 1,
+      "area": "Applied AI and LLM workflows",
+      "positioning": "Differentiator",
+      "skills": [
+        "Large language models",
+        "AI agent workflows",
+        "Embedding models",
+        "Vector databases",
+        "Retrieval-augmented generation",
+        "Natural-language-to-SQL",
+        "Prompt engineering",
+        "Gemini API",
+        "OpenAI API"
+      ],
+      "evidenceStatus": "public project, professional prototype, and owner-confirmed current focus",
+      "evidence": "Built a guarded Gemini portfolio assistant and prototyped an embedding-based natural-language-to-SQL workflow with vector retrieval; agent workflows are a current capability focus."
+    },
+    {
+      "priority": 2,
+      "area": "Data architecture and warehouses",
+      "positioning": "Core strength",
+      "skills": [
+        "Data warehousing",
+        "Medallion architecture",
+        "Delta Lake",
+        "Dimensional modeling",
+        "Data marts",
+        "OLTP and OLAP",
+        "Batch processing",
+        "Streaming processing",
+        "Data quality"
+      ],
+      "evidenceStatus": "employment",
+      "evidence": "Designed warehouse and medallion data layers from source ingestion through analytical consumption."
+    },
+    {
+      "priority": 3,
+      "area": "Core data engineering",
+      "positioning": "Primary toolkit",
+      "skills": [
+        "Python",
+        "SQL",
+        "Apache Airflow",
+        "dbt",
+        "ETL and ELT",
+        "API integration",
+        "Automation",
+        "Testing",
+        "Monitoring"
+      ],
+      "evidenceStatus": "employment",
+      "evidence": "Builds and operates production pipelines, transformations, APIs, models, and automated data workflows."
+    },
+    {
+      "priority": 4,
+      "area": "Distributed data and cloud platforms",
+      "positioning": "Scale and performance",
+      "skills": [
+        "Apache Spark",
+        "PySpark",
+        "Databricks",
+        "Google BigQuery",
+        "AWS",
+        "Microsoft Azure",
+        "Azure Data Factory",
+        "Databricks Workflows",
+        "Change Data Feed"
+      ],
+      "evidenceStatus": "employment",
+      "evidence": "Works with distributed batch and streaming workloads, near-real-time delivery, and cloud data platforms."
+    },
+    {
+      "priority": 5,
+      "area": "Product and customer data",
+      "positioning": "Specialized integration experience",
+      "skills": [
+        "RudderStack",
+        "Mixpanel",
+        "CleverTap",
+        "Braze",
+        "Event schemas",
+        "Identity flows",
+        "Product analytics",
+        "Segmentation",
+        "Lifecycle activation"
+      ],
+      "evidenceStatus": "owner-confirmed employment",
+      "evidence": "Connects event collection and identity to behavioral analytics, customer engagement, and measurement."
+    },
+    {
+      "priority": 6,
+      "area": "Delivery, software, and analytics",
+      "positioning": "Supporting toolkit",
+      "skills": [
+        "Docker",
+        "Git and GitHub",
+        "Terraform",
+        "Kubernetes",
+        "JavaScript and TypeScript",
+        "Power BI",
+        "Tableau",
+        "Metabase",
+        "Jira"
+      ],
+      "evidenceStatus": "employment",
+      "evidence": "Supports maintainable delivery, infrastructure, stakeholder-facing analytics, and cross-functional collaboration."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Data Engineer",
+      "organization": "Kantar IBOPE Media",
+      "period": "Jun 2024 — Present",
+      "startDate": "2024-06",
+      "endDate": null,
+      "workplace": "Remote",
+      "evidenceType": "employment and owner-confirmed current skills",
+      "highlights": [
+        "Owns end-to-end architecture and delivery of multi-country batch and streaming data integration with PySpark, Databricks, Delta Lake, and medallion architecture for near-real-time analytical reporting.",
+        "Builds warehouse and product-data workflows with Google BigQuery, dbt, RudderStack, Mixpanel, CleverTap, and Braze across event collection, behavioral analytics, segmentation, and activation.",
+        "Prototyped an LLM-assisted natural-language-to-SQL workflow using embeddings, vector retrieval, and cosine similarity to support nontechnical data discovery.",
+        "Collaborates with international engineering, product, analytics, and business stakeholders across US-aligned time zones."
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PySpark",
+        "Apache Spark",
+        "Databricks",
+        "Delta Lake",
+        "Medallion architecture",
+        "Streaming",
+        "Google BigQuery",
+        "dbt",
+        "RudderStack",
+        "Mixpanel",
+        "CleverTap",
+        "Braze",
+        "LLMs",
+        "Embeddings",
+        "Vector databases"
+      ]
+    },
+    {
+      "role": "Data Engineer",
+      "organization": "Mara",
+      "period": "Nov 2021 — Apr 2024",
+      "startDate": "2021-11",
+      "endDate": "2024-04",
+      "workplace": "Remote",
+      "evidenceType": "employment",
+      "highlights": [
+        "Built third-party API ingestion pipelines and an orders-focused data warehouse and data mart from scratch with Python, SQL, and Airflow, reducing related manual operational work by more than 70%.",
+        "Automated daily competitive-pricing collection across 20+ competitors, reducing manual product research by more than 60% and supporting pricing decisions.",
+        "Delivered cloud-based workflows with AWS, Docker, Git, Spark, and Metabase."
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Apache Airflow",
+        "Data warehousing",
+        "Data marts",
+        "API integration",
+        "AWS",
+        "Docker",
+        "Git",
+        "Spark",
+        "Metabase"
+      ]
+    },
+    {
+      "role": "Senior Data Analyst",
+      "organization": "Homer",
+      "period": "2021",
+      "startDate": "2021",
+      "endDate": "2021",
+      "workplace": "Remote",
+      "evidenceType": "employment",
+      "highlights": [
+        "Analyzed customer, broker, and property-market behavior with Python, SQL, and Tableau, identifying a 50%+ turnover difference between property segments to inform broker targeting."
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "Behavioral analysis"
+      ]
+    },
+    {
+      "role": "Data Analyst",
+      "organization": "Rabbot",
+      "period": "2019 — 2021",
+      "startDate": "2019",
+      "endDate": "2021",
+      "workplace": "Remote",
+      "evidenceType": "employment",
+      "highlights": [
+        "Built operational KPIs and Power BI reporting while improving application data governance, standardizing inconsistent maintenance data, and exposing SLA and Kanban bottlenecks."
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "Power BI",
+        "Data governance",
+        "KPIs",
+        "Jira"
+      ]
+    }
+  ],
+  "earlierExperience": [
+    {
+      "role": "Logistics Analyst — data analysis for performance and efficiency",
+      "organization": "BP",
+      "period": "Feb 2018 — Aug 2019",
+      "startDate": "2018-02",
+      "endDate": "2019-08",
+      "evidenceType": "public professional history"
+    },
+    {
+      "role": "Project Trainee",
+      "organization": "SDI.Systems",
+      "period": "Nov 2015 — Mar 2017",
+      "startDate": "2015-11",
+      "endDate": "2017-03",
+      "evidenceType": "public professional history"
+    },
+    {
+      "role": "Engineering Intern",
+      "organization": "MHA Engenharia",
+      "period": "Aug 2014 — Oct 2015",
+      "startDate": "2014-08",
+      "endDate": "2015-10",
+      "evidenceType": "public professional history"
+    }
+  ],
+  "publicProjects": [
+    {
+      "name": "E-commerce warehouse challenge",
+      "evidenceType": "public project",
+      "description": "Order-item star schema and Airflow pipeline across two PostgreSQL sources with idempotent loads, FX normalization, data-quality checks, tests, and analytics.",
+      "url": "https://github.com/renancatan/data-engineer-challenge"
+    },
+    {
+      "name": "Guarded Gemini portfolio assistant",
+      "evidenceType": "public project",
+      "description": "Browser-to-Cloudflare-Worker-to-Gemini flow with a runtime-only credential, constrained public context, validation, origin controls, rate limiting, and automated safeguard tests.",
+      "url": "https://github.com/renancatan/portfolio/tree/main/worker"
+    },
+    {
+      "name": "Operational BI walkthrough",
+      "evidenceType": "public project",
+      "description": "Power BI reporting walkthrough published with the original company data altered for privacy.",
+      "url": "https://www.youtube.com/watch?v=fj8QfpiFOYQ"
+    }
+  ],
+  "education": [
+    {
+      "credential": "Bachelor of Science in Mechanical Engineering",
+      "institution": "Universidade Anhembi Morumbi",
+      "period": "2010 — 2016",
+      "startDate": "2010",
+      "endDate": "2016"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Git and GitHub",
+      "issuer": "Udemy",
+      "year": 2022,
+      "url": "https://www.udemy.com/certificate/UC-7ce74844-da56-4282-b879-86f600003d13/"
+    },
+    {
+      "name": "Python Developer",
+      "issuer": "Udemy",
+      "year": 2021,
+      "url": "https://www.udemy.com/certificate/UC-991162eb-3388-43c4-b9c1-d37c49c183f6/"
+    },
+    {
+      "name": "Big Data",
+      "issuer": "Udemy",
+      "year": 2021,
+      "url": "https://www.udemy.com/certificate/UC-975605e0-3061-4c5b-96b3-fe96fe82dd3b/"
+    },
+    {
+      "name": "Data Science and Machine Learning",
+      "issuer": "Tera",
+      "year": 2020,
+      "url": "https://www.credential.net/5d3a3a46-1e6e-4cac-a6ae-d390edb47bb8"
+    }
+  ],
+  "languages": [
+    "Portuguese — Native",
+    "English — Full professional proficiency",
+    "French — Full professional proficiency",
+    "Italian — Intermediate",
+    "Chinese — Elementary"
+  ],
+  "links": {
+    "portfolio": "https://renancatan.github.io/portfolio/",
+    "careerProfile": "https://renancatan.github.io/portfolio/profile.html",
+    "selectedWork": "https://renancatan.github.io/portfolio/#work",
+    "skillsAndCertifications": "https://renancatan.github.io/portfolio/details.html",
+    "github": "https://github.com/renancatan",
+    "linkedin": "https://www.linkedin.com/in/renan-catan/"
+  },
+  "scope": "Public professional facts only. No private client names, confidential project details, phone number, salary, API credentials, or sensitive personal data."
+}
